@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Val's Christmas Adventure</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="bienvenida" class="container">
+        <img src="assets/title2.gif">
+      <div> <img src="assets/separadore.webp"> </div>
+         <h2 class="selectabletext" onclick="mostrarWakeup()"><strong>START</strong></h2>
+        </div>
+    </div>
+
+    <div id="wakeup" class="nyanchi">
+        <div id="nyan" class="pagina-oculta">
+        <img src="assets/blank.png" width="10" height="120">
+         <img src="assets/december.gif">
+       </div>
+        <h2 class="selectabletext"onclick="mostrarAlready()"style="margin-top: 20px;"><strong>NEXT</strong></h2>
+    </div>
+
+    <div id="already" class="nyanchi">
+    <div id="christmasa" class="pagina-oculta">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+       </div>
+<h2 class="selectabletext" onclick="showPage('wakeup')" style="margin-top: 20px;"><strong>NEXT</strong></h2>   
+ </div>
+
+<audio id="navidadmp3" controls autoplay loop style="margin: 20px;">
+<source src="assets/christmasmp3.mp3">
+</audio>
+     <script src="navegacion.js"></script>
+</body>
+</html>
