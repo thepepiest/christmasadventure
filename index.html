@@ -7,30 +7,337 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 
+
+  <!-- inicio -->
+
 <body>
     <div id="bienvenida" class="container">
         <img src="assets/title2.gif">
+              <div><img src="assets/val.png" width="300" height="300"></div>   
       <div> <img src="assets/separadore.webp"> </div>
-         <h2 class="selectabletext" onclick="mostrarWakeup()"><strong>START</strong></h2>
+      <h2 class="selectabletext" onclick="mostrarWakeup()"><strong>START</strong></h2>
         </div>
     </div>
 
+  <!-- pag 1 -->
+
     <div id="wakeup" class="nyanchi">
         <div id="nyan" class="pagina-oculta">
-        <img src="assets/blank.png" width="10" height="120">
+        <img src="assets/blank.png" width="10" height="210">
          <img src="assets/december.gif">
        </div>
-        <h2 class="selectabletext"onclick="mostrarAlready()"style="margin-top: 20px;"><strong>NEXT</strong></h2>
+        <h2 class="selectabletext"onclick="mostrarAlready()"style="margin-top: 130px;"><strong>NEXT ></strong></h2>
     </div>
+
+
+  <!-- pag 2 -->
 
     <div id="already" class="nyanchi">
     <div id="christmasa" class="pagina-oculta">
+        <img src="assets/calendario.png" width="550" height="350">
     <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"YA MAÑANA ES NAVIDAD? QUÉ RAPIDO! JURARÍA QUE FUE RECIÉN HACE UN AÑO..."</h2>
        </div>
-<h2 class="selectabletext" onclick="showPage('wakeup')" style="margin-top: 20px;"><strong>NEXT</strong></h2>   
+<h2 class="selectabletext" onclick="mostrarPag3()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
  </div>
 
-<audio id="navidadmp3" controls autoplay loop style="margin: 20px;">
+  <!-- pag 3 -->
+
+   <div id="pag3" class="nyanchi">
+    <div id="pag3.2" class="pagina-oculta">
+        <img src="assets/valstare.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"ESPERO SANTA ME TRAIGA ALGO ÉPICO... LE DEJARÉ UN REGALO PARA CUANDO VENGA!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarPag4()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+  <!-- pag 4 -->
+   <div id="pag4" class="nyanchi">
+    <div id="pag4.2" class="pagina-oculta">
+        <img src="assets/items.gif" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo"><strong>(QUÉ DEBERÍA DEJARLE A SANTA?)</strong></h2>
+       </div>
+ <div class="delete-buttons">
+                <h2 class="choose" onclick="mostrarBomba()" style="margin-top: 100px; margin-right: 70px;"><strong>BOMBA</strong></h2>
+                <h2 class="choose" onclick="mostrarGalleta()" style="margin-top: 100px;"><strong>GALLETITAS DE PESCADO</strong></h2>
+            </div>
+ </div>
+
+
+ <!-- pag bomba -->
+     <div id="pagbomba" class="nyanchi">
+    <div id="pagbomba.2" class="pagina-oculta">
+        <img src="assets/bomb.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">LE DEJASTE UNA BOMBA A SANTA</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarBomba2()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag bomba2 -->
+     <div id="pagbomba2" class="nyanchi">
+    <div id="pagbomba2.2" class="pagina-oculta">
+        <img src="assets/blank.png" width="10" height="210">
+         <img src="assets/nextday.gif">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h1 class="blancoa">.</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarBomba3()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+<!-- pag bomba3 -->
+     <div id="pagbomba3" class="nyanchi">
+    <div id="pagbomba3.2" class="pagina-oculta">
+        <img src="assets/valyippee.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"FINALMENTE ES NAVIDAD! NO PUEDO ESPERAR A VER QUE ME TRAJO SAN..."</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarBomba4()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+
+<!-- pag bomba4 -->
+     <div id="pagbomba4" class="nyanchi">
+    <div id="pagbomba4.2" class="pagina-oculta">
+         <img src="assets/adiossanta.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"HUH?"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarBadEnding()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+<!-- pag bad ending -->
+     <div id="badending" class="nyanchi">
+    <div id="badending.2" class="pagina-oculta">
+         <img src="assets/finalmalo.png" width="550" height="350">
+    <h1 class="titulo"><strong>BAD ENDING</strong></h1>
+    <h2 class="subtitulo">mataste a santa. gracias bolas, gracias.</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarStart()" style="margin-top: 130px;"><strong>ELEGIR OTRA OPCION</strong></h2>   
+ </div>
+
+
+
+
+
+ <!-- pag galleta -->
+     <div id="paggalleta" class="nyanchi">
+    <div id="paggalleta.2" class="pagina-oculta">
+        <img src="assets/fih.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">LE DEJASTE GALLETITAS A SANTA</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta2()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag galleta2 -->
+     <div id="paggalleta2" class="nyanchi">
+    <div id="paggalleta2.2" class="pagina-oculta">
+        <img src="assets/blank.png" width="10" height="210">
+         <img src="assets/nextday.gif">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h1 class="blancoa">.</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta3()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+
+ <!-- pag galleta3 -->
+     <div id="paggalleta3" class="nyanchi">
+    <div id="paggalleta3.2" class="pagina-oculta">
+        <img src="assets/goodvalyippee.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"FINALMENTE ES NAVIDAD! NO PUEDO ESPERAR A VER QUÉ ME TRAJO..."</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta4()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+  <!-- pag galleta3 4-->
+     <div id="paggalleta4" class="nyanchi">
+    <div id="paggalleta4.2" class="pagina-oculta">
+        <img src="assets/valscream.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"HAAAAH?!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta5()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+   <!-- pag galleta5 -->
+     <div id="paggalleta5" class="nyanchi">
+    <div id="paggalleta5.2" class="pagina-oculta">
+        <img src="assets/pepi.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">"ohohohoho1!! pero si es bolas!!1!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta6()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+
+   <!-- pag galleta6 -->
+     <div id="paggalleta6" class="nyanchi">
+    <div id="paggalleta6.2" class="pagina-oculta">
+        <img src="assets/encounter1.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"QUIÉN ERES Y QUE HACES EN MI CASA? VOY A LLAMAR A LA POLICÍA"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta7()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+   <!-- pag galleta7 -->
+     <div id="paggalleta7" class="nyanchi">
+    <div id="paggalleta7.2" class="pagina-oculta">
+        <img src="assets/encounter2.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">"noo... nono espera!!! al menos deja explicarme!!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarGalleta8()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+   <!-- pag galleta8 -->
+     <div id="paggalleta8" class="nyanchi">
+    <div id="paggalleta8.2" class="pagina-oculta">
+        <img src="assets/extendinggifts.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">"mi nombre es pepiclos, ayudante de temporada de santa claus, y he venido a entregarte tus regalos!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrardecision2()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+
+
+ <!-- pag DECISION -->
+     <div id="decision" class="nyanchi">
+    <div id="decision.2" class="pagina-oculta">
+        <img src="assets/gifts.gif" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">(QUE REGALO DESEAS ABRIR PRIMERO?)</h2>
+       </div>
+<div class="delete-buttons">
+                <h2 class="choose" onclick="mostrarPrimerRegalo()" style="margin-top: 100px; margin-right: 70px;"><strong>REGALO 1</strong></h2>
+                <h2 class="choose" onclick="mostrarSegundoRegalo()" style="margin-top: 100px;"><strong>REGALO 2</strong></h2>
+            </div>
+ </div>
+
+ <!-- pag abrir -->
+     <div id="primerregalo" class="nyanchi">
+    <div id="primerregalo.2" class="pagina-oculta">
+        <img src="assets/regalo1.png" onclick="mostrarAbrir()" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">(click to open)</h2>
+       </div>
+ </div>
+
+  <!-- pag abrir1.2 -->
+     <div id="primerregalo2" class="nyanchi">
+    <div id="primerregalo2.2" class="pagina-oculta">
+        <img src="assets/mockup.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">"qué lindo dibujo! me pregunto quién lo habrá hecho... eejekekejk :ojitosvoid:"</h2>
+       </div>
+<div class="delete-buttons">
+                <h2 class="choose" onclick="mostrarSegundoRegalo()" style="margin-top: 100px; margin-right: 70px;"><strong>abrir el regalo 2</strong></h2>
+                <h2 class="selectabletext" onclick="mostrarByeSanta()" style="margin-top: 100px;"><strong>next ></strong></h2>
+            </div>
+ </div>
+
+ <!-- pag abrir2 -->
+     <div id="segundoregalo" class="nyanchi">
+    <div id="segundoregalo.2" class="pagina-oculta">
+        <img src="assets/regalo2.png" onclick="mostrarAbrir2()" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">(click to open)</h2>
+       </div>
+ </div>
+
+  <!-- pag abrir2.2 -->
+     <div id="segundoregalo2" class="nyanchi">
+    <div id="segundoregalo2.2" class="pagina-oculta">
+        <img src="assets/mockup.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">y sin riesgo de virus!</h2>
+       </div>
+<div class="delete-buttons">
+                <h2 class="choose" onclick="mostrarPrimerRegalo()" style="margin-top: 100px; margin-right: 70px;"><strong>abrir el regalo 1</strong></h2>
+                <h2 class="selectabletext" onclick="mostrarByeSanta()" style="margin-top: 100px;"><strong>next ></strong></h2>
+            </div>
+ </div>
+
+  <!-- pag byesanta -->
+     <div id="byesanta" class="nyanchi">
+    <div id="byesanta.2" class="pagina-oculta">
+        <img src="assets/clock.png" width="550" height="350">
+    <h1 class="titulo"><strong>pepi clos</strong></h1>
+    <h2 class="subtitulo">"ahora que cumplí mi deber, tendré que borrarte la memoria!"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarByeSanta2()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag byesanta2 -->
+     <div id="byesanta2" class="nyanchi">
+    <div id="byesanta2.2" class="pagina-oculta">
+        <img src="assets/shocked.png" width="550" height="350">
+    <h1 class="titulo"><strong>VAL</strong></h1>
+    <h2 class="subtitulo">"HUH...?"</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarByeSanta3()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag byesanta3 -->
+     <div id="byesanta3" class="nyanchi">
+    <div id="byesanta3.2" class="pagina-oculta">
+        <img src="assets/BLACK.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">...</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarByeSanta4()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag byesanta4 -->
+     <div id="byesanta4" class="nyanchi">
+    <div id="byesanta4.2" class="pagina-oculta">
+        <img src="assets/wakingup.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">(DESPIERTAS SIN SABER QUÉ ACABA DE PASAR, SE HABRÁ TRATADO DE UN SUEÑO?)</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarByeSanta5()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag byesanta5 -->
+     <div id="byesanta5" class="nyanchi">
+    <div id="byesanta5.2" class="pagina-oculta">
+        <img src="assets/notetable.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">(HAY UNA NOTA EN LA MESA)</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarByeSanta6()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag byesanta6 -->
+     <div id="byesanta6" class="nyanchi">
+    <div id="byesanta6.2" class="pagina-oculta">
+        <img src="assets/note.png" width="550" height="350">
+    <h1 class="blancoa"><strong>.</strong></h1>
+    <h2 class="subtitulo">...</h2>
+       </div>
+<h2 class="selectabletext" onclick="mostrarFin()" style="margin-top: 130px;"><strong>NEXT ></strong></h2>   
+ </div>
+
+ <!-- pag fin -->
+     <div id="final" class="nyanchi">
+    <div id="final.2" class="pagina-oculta">
+              <img src="assets/blank.png" width="10" height="210">
+    <h1 class="titulo"><strong>THE END</strong></h1>
+    <h2 class="subtitulo">hola bolas!! espero te haya gustado este cosito jekje es la primera vez que hago algo así asi q espero no se bugee :c tqm, feliz navidad!!! pasame tu steam porfi...</h2>
+    <h2 class="subtitulo">by - pepi</h2>
+       </div> 
+             <h1 class="blancoa"><strong>.</strong></h1>
+        <h1 class="blancoa"><strong>.</strong></h1>
+ </div>
+
+
+<audio id="navidadmp3" controls autoplay loop style="margin: 50px;">
 <source src="assets/christmasmp3.mp3">
 </audio>
      <script src="navegacion.js"></script>
